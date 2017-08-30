@@ -1,0 +1,11 @@
+初始化
+http://localhost:8888/init
+
+首页
+http://localhost:8888/html/index.html
+
+获奖名单
+http://localhost:8888/lottery/list
+
+单项
+http://localhost:8888/lottery?rank=3
