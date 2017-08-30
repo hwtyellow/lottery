@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2017铂略年会</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/gloab.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body class="start_body">	
+	<div class="p_list">
+		<h1>获奖名单</h1>
+		<div class="clearfix mainw ">
+			<% if (prize0.length>0) { %> 
+				<div class="mt30 clearfix">				
+					<div class="l_area p_title">特等奖</div>
+					<div class="r_area">
+						<% prize0.forEach(function(name){ %>
+							<span class="p_name"><%= name[0] %><%= name[1] %></span>
+						<% }) %>
+					</div>
+				</div>
+			<% } %>
+
+			<% if (prize1.length>0) { %> 
+				<div class="mt30 clearfix">				
+					<div class="l_area p_title">一等奖</div>
+					<div class="r_area">
+						<% prize1.forEach(function(name){ %>
+							<span class="p_name"><%= name[0] %><%= name[1] %></span>
+						<% }) %>
+					</div>
+				</div>
+			<% } %>
+
+			<% if (prize2.length>0) { %> 
+				<div class="mt30 clearfix">				
+					<div class="l_area p_title">二等奖</div>
+					<div class="r_area">
+						<% prize2.forEach(function(name){ %>
+							<span class="p_name"><%= name[0] %><%= name[1] %></span>
+						<% }) %>
+					</div>
+				</div>
+			<% } %>
+
+			<% if (prize3.length>0) { %> 
+				<div class="mt30 clearfix">				
+					<div class="l_area p_title">三等奖</div>
+					<div class="r_area">
+						<% prize3.forEach(function(name){ %>
+							<span class="p_name"><%= name[0] %><%= name[1] %></span>
+						<% }) %>
+					</div>
+				</div>
+			<% } %>
+		</div>
+	</div>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>
